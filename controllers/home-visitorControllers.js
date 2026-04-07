@@ -93,7 +93,7 @@ const getIPInfo = async (ip) => {
 // 🚀 MAIN FUNCTION
 export const trackVisitor = async (req, res) => {
     try {
-        const { sessionId, screenSize, utmSource, language } = req.body;
+        const { sessionId, screenSize, utmSource, language, browserName, osName, device, deviceBrand, userAgent, platform } = req.body;
 
         const ip = getClientIP(req);
 
@@ -121,6 +121,13 @@ export const trackVisitor = async (req, res) => {
                 org: ipData.org,
                 postal: ipData.postal,
                 timezone: ipData.timezone,
+
+                browserName,
+                osName,
+                device,
+                deviceBrand,
+                userAgent,
+                platform,
 
                 lastActivity: new Date(),
             });
@@ -152,6 +159,13 @@ export const trackVisitor = async (req, res) => {
                 org: ipData.org,
                 postal: ipData.postal,
                 timezone: ipData.timezone,
+
+                browserName,
+                osName,
+                device,
+                deviceBrand,
+                userAgent,
+                platform,
 
                 lastActivity: new Date(),
             });
