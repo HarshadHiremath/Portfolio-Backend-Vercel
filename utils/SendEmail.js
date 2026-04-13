@@ -104,11 +104,15 @@ return `
         <p class="body-text">Hello <span class="highlight">${user}</span>,</p>
         
         <p class="body-text">
-          Thank you for contacting me through my portfolio website. I’ve <span class="highlight">successfully received</span> your message and will review it carefully.
+          Thank you for reaching out through my portfolio.
+        </p>
+
+        <p class="body-text">
+          I’ve <span class="highlight">successfully received</span> your message and truly appreciate you taking the time to connect. I will carefully review your query and get back to you at the earliest.
         </p>
         
         <p class="body-text">
-          I’ll get back to you as soon as possible. I appreciate you taking the time to connect.
+          Looking forward to continuing the conversation.
         </p>
 
         <div class="btn-container">
